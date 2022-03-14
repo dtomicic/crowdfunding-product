@@ -1,0 +1,111 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: none;
+}
+
+.header {
+    width: 100%;
+    background: url('../../assets/images/image-hero-mobile.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: toRem(300);
+    position: relative;
+
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+
+        &Top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: toRem(25) toRem(20);
+            z-index: 999;
+
+            &RightHamburger {
+                display: none;
+            }
+    
+            &RightExit {
+                display: none;
+            }
+    
+            &RightDesktop {
+                display: none;
+            }
+        }
+
+        &Bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: white;
+            width: 90%;
+            align-self: center;
+            border-radius: toRem(15);
+            z-index: 999;
+            position: absolute;
+            top: toRem(-230);
+            max-width: toRem(338);
+            transition: ease-in-out 0.5s;
+
+            &Item {
+                width: 100%;
+            }
+            
+            &Link {
+                font-size: toRem(14);
+                font-family: $mainFont;
+                text-decoration: none;
+                color: rgb(71, 70, 70);
+            }
+
+            &Header {
+                padding: toRem(27);
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.showNav {
+    top: toRem(75);
+}
+
+.show {
+    display: block;
+}
+
+.overflowHide {
+    overflow: hidden;
+}
+
+// Media queries
+
+@media (min-width: 505px) {
+    .header {
+        height: toRem(450);
+    }
+}
+
+@media (min-width: $breakTablet) {
+    .header {
+        height: toRem(550);
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        background-image: url('../../assets/images/image-hero-desktop.jpg');
+        height: toRem(400);
+    }
+}
