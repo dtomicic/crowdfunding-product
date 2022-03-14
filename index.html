@@ -18,12 +18,14 @@
                 </div>
 
                 <div class="header__navigationTopRight">
-                    <img src="assets/images/icon-hamburger.svg" alt="Open menu picture" class="header__navigationTopRightHamburger show" id="hamburger">
-                    <img src="assets/images/icon-close-menu.svg" alt="Close menu picture" class="header__navigationTopRightExit" id="exit">
+                    <div class="header__navigationTopRightMobile">
+                        <img src="assets/images/icon-hamburger.svg" alt="Open menu picture" class="header__navigationTopRightHamburger show" id="hamburger">
+                        <img src="assets/images/icon-close-menu.svg" alt="Close menu picture" class="header__navigationTopRightExit" id="exit">
+                    </div>
                     <div class="header__navigationTopRightDesktop">
-                        <a href="#" class="header__navigationTopRightDesktopLink"><h3>About</h3></a>
-                        <a href="#" class="header__navigationTopRightDesktopLink"><h3>Discover</h3></a>
-                        <a href="#" class="header__navigationTopRightDesktopLink"><h3>Get Started</h3></a>
+                        <a href="#" class="header__navigationTopRightDesktopLink"><h3 class="header__navigationTopRightDesktopLinkHeader">About</h3></a>
+                        <a href="#" class="header__navigationTopRightDesktopLink"><h3 class="header__navigationTopRightDesktopLinkHeader">Discover</h3></a>
+                        <a href="#" class="header__navigationTopRightDesktopLink"><h3 class="header__navigationTopRightDesktopLinkHeader">Get Started</h3></a>
                     </div>
                 </div>
             </div>
@@ -43,8 +45,29 @@
             </div>
         </nav>
     </section>
-    <div class="overlay" id="overlay"></div>
 
+    <section class="project">
+        <div class="card overlapping">
+            <div class="project__header">
+                <img src="assets/images/logo-mastercraft.svg" alt="Logo of the project" class="project__headerLogo">
+                <div class="project__headerText">
+                    <h3 class="project__headerTextHeading">Mastercraft Bamboo Monitor Riser</h3>
+                    <p class="project__headerTextParagraph">A beautifully handcrafted monitor stand to reduce neck and eye strain.</p>
+                </div>
+                <div class="project__headerBtns">
+                    <div class="project__headerBtnsBack">
+                        <h3 class="project__headerBtnsBackHeader">Back this project</h3>
+                    </div>
+                    <div class="project__headerBtnsBookmark" id="bookmark">
+                        <svg class="bookmarked" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle id="subCircle" fill="#2F2F2F" cx="28" cy="28" r="28"/><path id="subPath" fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+                        <h3 class="project__headerBtnsBookmarkHeader" id="subHeader">Bookmark</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay" id="overlay"></div>
     <script src="assets/js/components/nav.js"></script>
+    <script src="assets/js/components/bookmarking.js"></script>
 </body>
 </html>

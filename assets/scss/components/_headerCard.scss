@@ -1,0 +1,109 @@
+.project__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: toRem(297);
+
+    &Logo {
+        position: relative;
+        bottom: toRem(30);
+    }
+
+    &Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &Heading {
+            text-align: center;
+            font-size: toRem(22);
+            margin-bottom: toRem(30);
+            width: 90%;
+        }
+
+        &Paragraph {
+            text-align: center;
+            font-size: toRem(14);
+            font-weight: 400;
+            color: $darkGray;
+            line-height: toRem(25);
+            margin-bottom: toRem(30);
+        }
+    }
+
+    &Btns {
+        display: flex;
+        align-items: center;
+        margin-bottom: toRem(30);
+        justify-content: space-between;
+        width: 100%;
+
+        &Back {
+            background-color: $moderateCyan;
+            color: white;
+            padding: toRem(20) toRem(10);
+            border-radius: toRem(50);
+            width: 75%;
+
+            &Header {
+                font-size: toRem(16);
+                text-align: center;
+            }
+
+            &:hover {
+                background-color: $darkCyan;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+            }
+        }
+
+        &Bookmark {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &Header {
+                display: none;
+            }
+        }
+    }
+}
+
+// Media queries
+@media (min-width: $breakTablet) {
+    .project__header {
+        max-width: toRem(737);
+        width: 100%;
+
+        &BtnsBack {
+            width: 40%;
+        }
+
+        &BtnsBookmark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(197, 197, 197, 0.2);
+            border-radius: toRem(100);
+            
+
+            &Header {
+                display: block;
+                padding: 0 toRem(20);
+                color: $darkGray;
+                transition: ease-in-out 0.4s;
+            }
+        }
+    }
+}
+
+.bookmarked {
+    color: $darkCyan;
+    fill: $darkCyan;
+    transition: ease-in-out 0.5s;
+}
+
+.bookmarkedPath {
+    fill: white;
+    transition: ease-in-out 0.5s;
+}
