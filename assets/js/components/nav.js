@@ -1,20 +1,20 @@
-const hamburger = document.getElementById('hamburger');
-const exit = document.getElementById('exit');
-const menu = document.getElementById('navMenu');
-const overlay = document.getElementById('overlay');
+const HAMBURGER = document.getElementById('hamburger');
+const EXIT = document.getElementById('exit');
+const MENU = document.getElementById('navMenu');
+const OVERLAY = document.getElementById('overlay');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('show');
-    exit.classList.toggle('show');
-    menu.classList.toggle('showNav');
-    overlay.classList.toggle('show');
+HAMBURGER.addEventListener('click', () => {
+    HAMBURGER.classList.toggle('show');
+    EXIT.classList.toggle('show');
+    MENU.classList.toggle('showNav');
+    OVERLAY.classList.toggle('show');
     document.body.classList.toggle('overflowHide');
 })
 
-exit.addEventListener('click', () => {
-    hamburger.classList.toggle('show');
-    exit.classList.toggle('show');
-    menu.classList.toggle('showNav');
-    overlay.classList.toggle('show');
+EXIT.addEventListener('click', () => {
+    HAMBURGER.classList.toggle('show');
+    EXIT.classList.toggle('show');
+    MENU.classList.toggle('showNav');
+    OVERLAY.classList.toggle('show');
     document.body.classList.toggle('overflowHide');
 })
