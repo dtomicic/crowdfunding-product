@@ -6,21 +6,15 @@
     background-color: white;
     border-radius: toRem(15);
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-    gap: toRem(50);
     font-family: $mainFont;
     padding: 0 toRem(20);
     max-width: toRem(375);
 
 
     &.overlapping {
-        position: absolute;
-        top: toRem(235);
-    }
-}
-
-@media (min-width: 505px) {
-    .card.overlapping {
-        top: toRem(390);
+        position: relative;
+        top: toRem(-55);
+        margin-bottom: toRem(-30);
     }
 }
 
@@ -28,15 +22,5 @@
     .card {
         max-width: toRem(892);
         padding: 0 toRem(50);
-
-        &.overlapping {
-            top: toRem(450);
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .card.overlapping {
-        top: toRem(300);
     }
 }
