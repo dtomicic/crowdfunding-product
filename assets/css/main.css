@@ -192,36 +192,21 @@ hr {
   border-radius: 0.9375rem;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  gap: 3.125rem;
   font-family: "Commissioner", sans-serif;
   padding: 0 1.25rem;
   max-width: 23.4375rem;
 }
 
 .card.overlapping {
-  position: absolute;
-  top: 14.6875rem;
-}
-
-@media (min-width: 505px) {
-  .card.overlapping {
-    top: 24.375rem;
-  }
+  position: relative;
+  top: -3.4375rem;
+  margin-bottom: -1.875rem;
 }
 
 @media (min-width: 768px) {
   .card {
     max-width: 55.75rem;
     padding: 0 3.125rem;
-  }
-  .card.overlapping {
-    top: 28.125rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .card.overlapping {
-    top: 18.75rem;
   }
 }
 
@@ -356,5 +341,88 @@ hr {
   fill: white;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+}
+
+.amounts {
+  padding: 1.875rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: -1.25rem;
+}
+
+.amounts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3125rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.amounts__itemHeader {
+  font-size: 1.875rem;
+}
+
+.amounts__itemSubHeader {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 0.875rem;
+}
+
+.amounts__line {
+  width: 30%;
+  margin-bottom: 1.25rem;
+  max-width: 5.625rem;
+}
+
+.amounts__slider {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.amounts__sliderBottom {
+  width: 100%;
+  background-color: rgba(197, 197, 197, 0.2);
+  height: 0.9375rem;
+  border-radius: 3.125rem;
+}
+
+.amounts__sliderTop {
+  width: 89%;
+  background-color: #3cb4ac;
+  z-index: 9999;
+  height: 0.9375rem;
+  border-radius: 3.125rem;
+  position: relative;
+  bottom: 0.9375rem;
+}
+
+@media (min-width: 768px) {
+  .amounts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .amounts__line {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 4.0625rem;
+    margin-right: 1.25rem;
+    margin-left: 0.625rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
