@@ -174,6 +174,8 @@ hr {
           align-items: center;
   background-color: #fafafa;
   min-height: 100vh;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 .card {
@@ -189,7 +191,7 @@ hr {
           align-items: center;
   width: 90%;
   background-color: white;
-  border-radius: 0.9375rem;
+  border-radius: 0.625rem;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   font-family: "Commissioner", sans-serif;
@@ -200,7 +202,7 @@ hr {
 .card.overlapping {
   position: relative;
   top: -3.4375rem;
-  margin-bottom: -1.875rem;
+  margin-bottom: -3.4375rem;
 }
 
 @media (min-width: 768px) {
@@ -423,6 +425,183 @@ hr {
     width: 4.0625rem;
     margin-right: 1.25rem;
     margin-left: 0.625rem;
+  }
+}
+
+.about {
+  padding: 1.875rem 0;
+}
+
+.about__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.about__descriptionHeader {
+  font-weight: 700;
+  font-size: 1.3125rem;
+}
+
+.about__descriptionParagraph {
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 0.9375rem;
+}
+
+.about__pledges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about__pledgesItem {
+  border: 0.0625rem solid rgba(182, 182, 182, 0.4);
+  border-radius: 0.625rem;
+  padding: 1.25rem 0.9375rem;
+}
+
+.about__pledgesItemHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3125rem;
+  margin-bottom: 1.5625rem;
+}
+
+.about__pledgesItemHeadingHeader {
+  font-weight: 700;
+  font-size: 1.0625rem;
+}
+
+.about__pledgesItemHeadingSubHeader {
+  font-weight: 500;
+  color: #3cb4ac;
+  font-size: 0.9375rem;
+}
+
+.about__pledgesItemParagraph {
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin-bottom: 1.25rem;
+}
+
+.about__pledgesItemBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__pledgesItemBottomAmount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.about__pledgesItemBottomAmountNumber {
+  font-weight: 700;
+  font-size: 2.1875rem;
+}
+
+.about__pledgesItemBottomAmountText {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.about__pledgesItemBottomBtn {
+  background-color: #3cb4ac;
+  width: 70%;
+  padding: 1.25rem 1.5625rem;
+  border-radius: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.about__pledgesItemBottomBtn:hover {
+  background-color: #147b74;
+  cursor: pointer;
+}
+
+.about__pledgesItemBottomBtnHeader {
+  font-size: 0.9375rem;
+  color: white;
+}
+
+.accentedBtn {
+  background-color: #7a7a7a;
+}
+
+.accentedBtn:hover {
+  cursor: not-allowed;
+  background-color: #7a7a7a;
+}
+
+.accentedPledge {
+  opacity: 0.5;
+}
+
+.accentedPledge:hover {
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .about__pledgesItemHeading {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__pledgesItemBottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__pledgesItemBottomBtn {
+    width: 35%;
   }
 }
 /*# sourceMappingURL=main.css.map */
