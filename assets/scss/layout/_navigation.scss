@@ -62,6 +62,10 @@
                 font-family: $mainFont;
                 text-decoration: none;
                 color: rgb(71, 70, 70);
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             &Header {
@@ -100,6 +104,30 @@ hr {
 @media (min-width: $breakTablet) {
     .header {
         height: toRem(550);
+
+        &__navigationTopRightMobile {
+            display: none;
+        }
+
+        &__navigationTopRightDesktop {
+            display: flex;
+            gap: toRem(30);
+
+            &Link {
+                color: white;
+                text-decoration: none;
+                font-family: $mainFont;
+                font-size: toRem(14);
+
+                &Header {
+                    font-weight: 400;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 
@@ -107,5 +135,6 @@ hr {
     .header {
         background-image: url('../../assets/images/image-hero-desktop.jpg');
         height: toRem(400);
+        background-size: fill
     }
 }

@@ -95,6 +95,10 @@
   color: #474646;
 }
 
+.header__navigationBottomLink:hover {
+  cursor: pointer;
+}
+
 .header__navigationBottomHeader {
   padding: 1.6875rem;
   font-weight: 700;
@@ -126,12 +130,231 @@ hr {
   .header {
     height: 34.375rem;
   }
+  .header__navigationTopRightMobile {
+    display: none;
+  }
+  .header__navigationTopRightDesktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.875rem;
+  }
+  .header__navigationTopRightDesktopLink {
+    color: white;
+    text-decoration: none;
+    font-family: "Commissioner", sans-serif;
+    font-size: 0.875rem;
+  }
+  .header__navigationTopRightDesktopLinkHeader {
+    font-weight: 400;
+  }
+  .header__navigationTopRightDesktopLink:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 992px) {
   .header {
     background-image: url("../../assets/images/image-hero-desktop.jpg");
     height: 25rem;
+    background-size: fill;
   }
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  background-color: white;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  gap: 3.125rem;
+  font-family: "Commissioner", sans-serif;
+  padding: 0 1.25rem;
+  max-width: 23.4375rem;
+}
+
+.card.overlapping {
+  position: absolute;
+  top: 14.6875rem;
+}
+
+@media (min-width: 505px) {
+  .card.overlapping {
+    top: 24.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 55.75rem;
+    padding: 0 3.125rem;
+  }
+  .card.overlapping {
+    top: 28.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card.overlapping {
+    top: 18.75rem;
+  }
+}
+
+.project__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 18.5625rem;
+}
+
+.project__headerLogo {
+  position: relative;
+  bottom: 1.875rem;
+}
+
+.project__headerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project__headerTextHeading {
+  text-align: center;
+  font-size: 1.375rem;
+  margin-bottom: 1.875rem;
+  width: 90%;
+}
+
+.project__headerTextParagraph {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #7a7a7a;
+  line-height: 1.5625rem;
+  margin-bottom: 1.875rem;
+}
+
+.project__headerBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.875rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.project__headerBtnsBack {
+  background-color: #3cb4ac;
+  color: white;
+  padding: 1.25rem 0.625rem;
+  border-radius: 3.125rem;
+  width: 75%;
+}
+
+.project__headerBtnsBackHeader {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.project__headerBtnsBack:hover {
+  background-color: #147b74;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.project__headerBtnsBookmark:hover {
+  cursor: pointer;
+}
+
+.project__headerBtnsBookmarkHeader {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .project__header {
+    max-width: 46.0625rem;
+    width: 100%;
+  }
+  .project__headerBtnsBack {
+    width: 40%;
+  }
+  .project__headerBtnsBookmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(197, 197, 197, 0.2);
+    border-radius: 6.25rem;
+  }
+  .project__headerBtnsBookmarkHeader {
+    display: block;
+    padding: 0 1.25rem;
+    color: #7a7a7a;
+    -webkit-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+  }
+}
+
+.bookmarked {
+  color: #147b74;
+  fill: #147b74;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.bookmarkedPath {
+  fill: white;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
