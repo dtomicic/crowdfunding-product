@@ -1,0 +1,109 @@
+.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: toRem(250);
+    left: toRem(19);
+    width: 90%;
+    border-radius: toRem(10);
+    box-shadow: 0px 0px 10px 1px black;
+    padding: toRem(25) toRem(20);
+    font-family: $mainFont;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: toRem(20);
+
+        &Paragraph {
+            font-size: toRem(15);
+            color: $darkGray;
+            margin-bottom: toRem(20);
+        }
+    }
+
+    &__item {
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        border-radius: toRem(10);
+
+        &Top {
+            display: flex;
+            flex-direction: column;
+            padding: toRem(25) toRem(20);
+
+            &Title {
+                display: flex;
+                margin-bottom: toRem(30);
+
+                &Circle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: toRem(25);
+                    height: toRem(25);
+                    border: 1px solid gray;
+                    border-radius: toRem(100);
+                    margin-right: toRem(20);
+                    
+                    &Inner {
+                        width: toRem(12.5);
+                        height: toRem(12.5);
+                        background-color: $moderateCyan;
+                        border-radius: toRem(100);
+                        display: none;
+                    }
+                }
+                
+
+                &HeadingHeader {
+                    font-size: toRem(18);
+                    margin-bottom: toRem(5);
+                }
+
+                &HeadingSubHeader {
+                    color: $moderateCyan;
+                    font-size: toRem(15);
+                    font-weight: 400;
+                }
+
+                &HeadingAmount.desktop {
+                    display: none;
+                }
+            }
+
+            &Text {
+                color: $darkGray;
+                font-size: toRem(15);
+            }
+        }
+
+        &Bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &Header {
+                font-size: toRem(15);
+                color: $darkGray;
+                font-weight: 400;
+                margin-bottom: toRem(20);
+            }
+
+            &Btns {
+                display: flex;
+                margin-bottom: toRem(20);
+
+                &Input {
+                    border-radius: toRem(10);
+                    border: 1px solid rgba(128, 128, 128, 0.589);
+                }
+            }
+        }
+    }
+}
+
+.modalHr {
+    margin-bottom: toRem(20);
+}
