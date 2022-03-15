@@ -110,10 +110,7 @@
 
 .accentedPledge {
     opacity: 0.5;
-
-    &:hover {
-        cursor: not-allowed;
-    }
+    pointer-events: none;
 }
 
 // Media queries

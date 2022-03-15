@@ -49,11 +49,18 @@
             border-radius: toRem(50);
             position: relative;
             bottom: toRem(15);
+            max-width: toRem(297.5);
         }
     }
 }
 
 // Media queries 
+@media (min-width: 505px) {
+    .amounts__sliderTop {
+        max-width: toRem(335);
+    }
+}
+
 @media(min-width: $breakTablet) {
     .amounts {
         flex-direction: row;
@@ -67,5 +74,16 @@
             margin-left: toRem(10);
             
         }
+
+        &__sliderTop {
+            max-width: toRem(591.19);
+        }
     }
+}
+
+@media (min-width: 992px) {
+    .amounts__sliderTop {
+        max-width: toRem(792);
+    }
+    
 }
